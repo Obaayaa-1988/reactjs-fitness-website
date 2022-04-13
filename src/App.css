@@ -1,38 +1,980 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Assistant:wght@200&family=Corinthia:wght@700&family=Cormorant+Garamond:wght@300&family=Kalam:wght@300&family=Oswald:wght@200&family=Poppins&family=Tajawal:wght@200;300;400&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Oswald';
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+
+.logo{
+  color: white;
+  border: 2px solid white;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  margin-left: 5rem;
+  padding-bottom: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header{
+  height: 5.5rem;
+  background-color: rgb(32, 32, 32);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+}
+nav ul li {
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-between;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  color:white;
+  font-family: 'Oswald';
+}
+
+nav a{
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header-social a{
+  color: white;
+  
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-social i{
+  color: rgb(196, 29, 99); 
+  padding-top: 2.2rem;
+  padding-right: 1rem;
+
+}
+
+.showcase-image{
+  background-image: url(/src/images/image1.jpg);
+  height: 120vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.showcase-image h1{
+  color: white;
+  font-size: 5rem;
+  font-family: 'Oswald';
+  margin-bottom: 5rem;
+}
+
+.showcase-image button{
+  padding: 1.1rem 3.5rem;
+  border: none;
+  background: rgb(196, 29, 99);
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Oswald';
+  cursor: pointer;
+  
+}
+
+/*styling for cards overlay*/
+
+.card-container{
+  /*width: 80%;*
+  /*margin: auto;*/
+  display: flex;
+
+  
+}
+
+.card-container img{
+  width: 28rem;
+  height: 37rem ;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.card-image1, .card-image2, .card-image3{
+  position: relative;
+}
+
+
+.image-overlay{
+  background-color: rgba(184, 44, 102, 0.9);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+
+
+
+}
+
+.image-overlay2{
+  background-color: rgba(22, 82, 100, 0.9);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-overlay3{
+  background-color: rgba(85, 7, 85, 0.9);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container h2{
+  text-align: center;
+  padding-top: 8rem;
+  color: white;
+  margin-bottom: 1.1rem;
+
+}
+
+.card-container p{
+  text-align: justify;
+  width: 70%;
+  color: white;
+  margin-left: 5rem;
+  margin-bottom: 2rem;
+  
+  
+
+}
+
+.card-container button{
+  text-align: center;
+  margin-left: 9rem;
+  padding: 1rem 2.2rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Oswald';
+
+
+}
+
+.card-container .btn{
+  background-color: rgb(224, 228, 29);
+}
+
+.card-container .btn2{
+  background-color: rgb(29, 115, 228);
+}
+
+.card-container .btn3{
+  background-color: rgb(29, 228, 128);
+}
+
+
+/*Styling the landing page*/
+/*
+.landing-image{
+  background-image: url(/src/images/image5.jpg);
+  height: 70vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}*/
+
+
+.land-image img{
+  width: 38rem;
+  height: 47rem ;
+  object-fit: cover;
+  object-position: 50% 50%;
+
+
+}
+
+.landing-about{
+  display: flex;
+  margin-top: 5rem;
+}
+
+.land-about h1{
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-top: 3rem;
+  color: black;
+ 
+}
+
+.land-about button{
+  margin-left: 14rem;
+  padding: 1rem 3rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(196, 29, 99);
+  color: white;
+  cursor: pointer;
+  font-family: 'Oswald';
+  font-size: 1rem;
+  font-weight: bolder;
+  
+
+}
+
+.land-about p{
+  width: 70%;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-left: 4rem;
+  margin-bottom: 3rem;
+  line-height: 3rem;
+
+  
+}
+
+.landing-text h1{
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+  padding-top: 3rem;
+}
+
+.landing-cards{
+  display: flex;
+  gap: 20px;
+}
+
+.landing-image{
+  background-image: url(/src/images/pic4.jpg);
+  height: 90vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  /* background-attachment: fixed; */
+
+}
+
+.land-card{
+  background-color: rgb(44, 53, 63);;
+  border-radius: 10px;
+  width: 15rem;
+  height: 15rem;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.landing-cards i{
+  font-size: 3.5rem;
+  color: white;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.land-card h2{
+  color: white;
+  margin-bottom: 1rem;
+}
+
+
+.land-card p{
+  width: 50%;
+  color: white;
+}
+
+
+.body-workout{
+  text-align: center;
+  margin-top: 5rem;
+  display: flex;
+}
+
+
+
+.offer-card h1{
+ text-align: center;
+ margin-top: 5rem;
+ margin-bottom: 2rem;
+ color: black;
+}
+
+.container{
+  margin: auto;
+  width: 80%;
+}
+
+.offer-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+  /* grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;  */
+}
+
+.offer-images img{
+  height: 25rem;
+  width: 23rem;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.cards{
+  height: 25rem;
+  width: 23rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards h3{
+  font-size: 1.3rem;
+}
+
+.offer-cards button{
+  padding: 0.7rem 1.5rem;
+  margin-top: 1.5rem;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(196, 29, 99);;
+  font-family: 'Oswald';
+  font-size: 1rem;
+  font-weight: bolder;
+
+}
+
+.offer-online{
+  background-color: white;
+  box-shadow: 5px 5px 15px rgba(141, 140, 140, 0.9);
+  /* border-left: 20px solid purple; */
+}
+.offer-online2{
+  background-color: rgb(48, 47, 30);
+  color: white;
+  box-shadow: 5px 5px 15px rgba(141, 140, 140, 0.9);
+}
+.trainer{
+  background-color: rgb(54, 68, 61) ;
+  box-shadow: 5px 5px 15px rgba(141, 140, 140, 0.9);
+  color: white;
+}
+
+.offer-count{
+  background-color: black;
+  color: white;
+  box-shadow: 5px 5px 15px rgba(158, 145, 145, 0.9);
+  color: white;
+}
+
+/*styling the form */
+.body-workout{
+  display: flex;
+}
+
+.outer-form2{
+  width: 42rem;
+  height: 30rem;
+  background-color: black;
+ 
+  
+}
+
+.outer-form2 i{
+  color: white;
+  font-size: 5rem;
+  margin-top: 1rem;
+  margin-right: 5rem;
+}
+
+.outer-form2 textarea{
+  margin-top: 2rem;
+
+}
+
+.outer-form2 form input{
+  display: block;
+  width: 60%;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 0;
+  border-radius: 5px;
+  margin-left: 3rem;
+  font-weight: bolder;
+  font-family: 'Oswald';
+  font-size: 1.1rem;
+  outline: none;
+}
+
+.outer-form2 form{
+  margin-left: 7rem;
+}
+
+.outer-form2 button{
+  padding: 1rem 2.1rem;
+  background-color: rgb(196, 29, 99); ;
+  color: #ffffff;
+  font-size: 1.1rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Oswald';
+  margin-top: 2.5rem;
+  font-weight: bolder;
+  margin-right: 4rem;
+
+}
+
+
+.mass-image img{
+  width: 42rem;
+  height: 30rem ;
+  object-fit: cover;
+  object-position: 50% 50%;
+
+
+}
+
+.mass-text h1{
+  text-align: center;
+  margin-top: 5rem;
+}
+.mass-text h1{
+  color: black;
+}
+
+
+
+/*styling wear.js */
+.gym-showcase{
+  display: flex;
+}
+
+.gym-showcase img{
+  width: 100%;
+  height: 37rem ;
+  object-fit: cover;
+  object-position: 50% 50%;
+
+}
+
+.outfit-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.outfit-grid a{
+  text-decoration: none;
+  color: black;
+
+}
+
+.gym-image1{
+  background-image: url(/src/images/image14.jpg);
+  height: 90.1vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gym-image1 h1{
+  font-size: 2.5rem;
+  color: white;
+}
+
+.gym-image1 span{
+  font-size: 2rem;
+  color: white;
+}
+
+.gym-image1 p{
+  font-size: 1.3rem;
+  color: white;
+  margin-top: 1.5rem;
+}
+
+.gym-image1 button{
+  padding: 1rem 3rem;
+  border: 1px solid white;
+  color: white;
+  font-family: 'Oswald';
+  font-size: 1.4rem;
+  background: transparent;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.outfit-grid img{
+  width: 20rem;
+  height: 30rem ;
+  object-fit: cover;
+  object-position: 50% 50%;
+
+}
+
+.outfit-grid button{
+  background: transparent;
+  padding: 1rem 4rem;
+  border: 2px solid black;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: 'Oswald';
+}
+
+.outfit-text h1{
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  background-color: black;
+  color: white;
+  width: 15rem;
+  padding: 1rem;
+  /*transform: skew(-27deg);*/
+
+}
+
+ .wear-display{
+  display: flex;
+  margin-top: 5rem;
+} 
+.wear-linear{
+  height: 30rem;
+  width: 50%;
+  background: #8E2DE2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+
+.display-image img{
+  width: 210%;
+  height: 30rem ;
+  object-fit: cover;
+  object-position: 50% 50%;
+
+}
+.wear-linear h1{
+  font-size: 4rem;
+}
+
+.wear-linear h2, h1{
+  color: white;
+}
+
+.wear-linear button{
+  padding: 0.9rem 3.1rem;
+  background-color: black;
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 2rem;
+  font-family: "Oswald";
+  font-size: 1.5rem;
+
+}
+
+
+
+
+/*styling the meal plan page*/
+ .meal-showcase{
+   background-image: url(/src/images/image19.jpg);
+  height: 100vh;
+  /* width: 100%; */
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  background-size: cover;
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;*/
+  position: relative; 
+  
+
+}
+
+.meal-showcase .waves {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  top: 400px;
+  
+}
+
+.meal-showcase h1{
+  font-size: 4.6rem;
+  width: 30%;
+  margin-left: 5rem;
+  margin-top: 5rem;
+  color: black;
+  
+}
+.break-text h1{
+  margin-top: 4rem;
+  text-align: center;
+  padding: 1rem 5rem;
+  font-size: 2.5rem;
+  color: black;
+  
+
+}
+.break-text p{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.break-card{
+  width: 23rem;
+  height: 27rem;
+  background-color: black;
+  box-shadow: 0px 0px 6px 0px gray;
+  color: white;
+  
+}
+
+.break-card i{
+  font-size: 3rem;
+  padding-top: 6rem;
+  color: rgb(255,215,0);
+  margin-left: 8rem;
+}
+
+.break-card h2{
+  margin-left: 7rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.break-card p{
+  width: 60%;
+  margin-left: 5rem;
+  margin-bottom: 1rem;
+}
+
+.break-card button{
+  padding: 0.7rem 1.5rem;
+  color: white;
+  border: 2px solid rgb(255,215,0);
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  font-family: 'Oswald';
+  font-size: 1rem;
+  margin-left: 7rem;
+}
+/* .break-ideas h3{
+  padding: 0.8rem 3rem;
+  border: 2px solid black;
+  width: 20%;
+
+} */
+
+.break-ideas img{
+  width: 25rem;
+  height: 27rem ;
+  object-fit: cover;
+  object-position: 50% 50%;
+  
+
+}
+
+.break-ideas{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+
+.lunch-ideas img{
+  width: 25rem;
+  height: 27rem ;
+  object-fit: cover;
+  object-position: 50% 50%;
+  
+
+}
+
+.lunch-ideas{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+
+}
+
+.break-card2{
+  width: 23rem;
+  height: 27rem;
+  background-color: white;
+  box-shadow: 0px 0px 6px 0px gray;
+  border-radius: 5px;
+  
+}
+
+.break-card2 i{
+  font-size: 3rem;
+  padding-top: 6rem;
+  color: rgb(255,215,0);
+  margin-left: 9rem;
+}
+
+.break-card2 h2{
+  margin-left: 7rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.break-card2 p{
+  width: 60%;
+  margin-left: 5rem;
+  margin-bottom: 1rem;
+}
+
+.break-card2 button{
+  padding: 0.7rem 1.5rem;
+  border: 3px solid rgb(255,215,0);
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  font-family: 'Oswald';
+  font-size: 1rem;
+  margin-left: 7rem;
+  font-weight: bolder;
+}
+
+
+ .menu{
+    background-image: url(/src/images/image5.jpg);
+   height: 95vh;
+    width: 100%; 
+   background-repeat: no-repeat;
+   background-position: center;
+   overflow: hidden;
+   background-size: cover
+
+} 
+.menu-consult h1{
+  margin-bottom: 2rem;
+  text-align: center;
+  margin-top: 6rem;
+  color: black;
+}
+
+
+/*styling the consultation form*/
+
+.outer-form{
+  max-width: 28rem;
+  height: 35rem;
+  background-color: black;
+  margin: 60px 100px;
+  border-radius: 10px;
+  
+}
+
+form input{
+  display: block;
+  width: 70%;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 0;
+  border-radius: 5px;
+  margin-left: 3rem;
+  font-weight: bolder;
+  font-family: 'Oswald';
+  font-size: 1.1rem;
+  outline: none;
+
+}
+
+.outer-form h4{
+  color: white;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.outer-form i{
+  color: rgb(255,215,0);
+  font-size: 3rem;
+  margin-left: 12rem;
+}
+
+
+
+ form textarea{
+  margin-left: 3rem;
+  margin-top: 2rem;
+} 
+
+.outer-form button{
+  padding: 0.7rem 2.1rem;
+  background-color: rgb(255,215,0);
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Oswald';
+  margin-left: 10rem;
+  margin-top: 2rem;
+  font-weight: bolder;
+}
+
+/*styling the footer only */
+footer{
+  height: 500px;
+  background-color: rgb(34, 33, 33);
+  /* border-top: 5px solid  rgb(196, 29, 99);; */
+}
+
+footer .logo{
+  color: white;
+  border: 2px solid white;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  margin-left: 5rem;
+  padding-bottom: 1rem;
+  width: 15%;
+
+}
+.footer-flex{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4rem;
+}
+
+.footer-flex button{
+  text-align: center;
+  margin-left: 6rem;
+  margin-top: 1rem;
+  padding: 0.8rem 2.6rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Oswald';
+  background-color: black;
+
+}
+
+
+.footer-flex p{
+  width: 40%;
+  margin-left: 5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  color: grey;
+}
+
+.footer-flex a{
+  text-decoration: none;
+  color: white;
+}
+
+.footer-flex .flex-part1 i{
+  font-size: 2rem;
+  /* margin-right: 1.2rem; */
+  margin-left: 5rem;
+}
+
+.flex-part2 h5{
+  color: #ffffff;
+  margin-left: 5rem;
+
+}
+
+.footer-flex .flex-part2{
+  margin-right: 18rem;
+}
+
+.footer-flex .flex-part3{
+  margin-right: 5rem;
+
+}
+
+.footer-flex .flex-part3 h4{
+  margin-top: 0.5rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.footer-flex .flex-part3 i{
+ color:  rgb(196, 29, 99);
+ font-size: 1.rem;
+}
+
+.flex-part3{
+  display: grid;
+}
+
+
+.footer-flex .flex-part3 h3{
+  margin-top: 0.5rem;
+  color: grey;
+}
+
+footer .footer-para{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 2rem;
 }
