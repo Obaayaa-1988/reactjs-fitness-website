@@ -12,9 +12,9 @@ export default function header() {
                 <nav>
                     <ul>
                     <li> <Link to ="/">HOME</Link></li>
-                    <li><Link to = "/Wear">GYM WEAR</Link></li>
+                    <li><Link to = "/Wears">GYM WEAR</Link></li>
                     <li><Link to = "/Meal">MEAL PLAN</Link></li>
-                    <li><Link to = "/Card">CONTACT</Link></li>
+                    <li><Link to = "/Contact">CONTACT</Link></li>
                     <li><Link to ="/Gym ">GYM EQUIPMENT</Link></li>
                     </ul>
                 </nav>

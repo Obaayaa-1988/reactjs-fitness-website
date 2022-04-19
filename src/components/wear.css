@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Assistant:wght@200&family=Corinthia:wght@700&family=Cormorant+Garamond:wght@300&family=Kalam:wght@300&family=Oswald:wght@200&family=Poppins&family=Tajawal:wght@200;300;400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* body{
+  background-color: red;
+} */
+
+.container{
+  width: 80%;
+  margin: auto;
+}
+
+.outfit-image img{
+  width: 40rem;
+  height: 40rem ;
+  margin-left: 13rem;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-left: 30px solid black;
+
+}
+
+.outfit-image p{
+  margin-bottom: 5rem;
+  margin-left: 13rem;
+  font-weight: bolder;
+}
+
+.outfit-image1 img{
+  width: 20rem;
+  height: 30rem ;
+  object-fit: cover;
+  object-position: 50% 50%;
+
+}
+
+.outfit-image1 button{
+  background: transparent;
+  padding: 1rem 4rem;
+  border: 2px solid black;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: 'Oswald';
+
+}
+
+.outfit-card a{
+  text-decoration: none;
+  color: black;
+
+}
+
+
+  .outfit-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  
+  

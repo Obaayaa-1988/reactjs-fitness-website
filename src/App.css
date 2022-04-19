@@ -122,9 +122,6 @@ nav a{
   align-items: center;
 
 
-
-
-
 }
 
 .image-overlay2{
@@ -481,7 +478,7 @@ nav a{
 
 
 
-/*styling wear.js */
+/*styling wears.js */
 .gym-showcase{
   display: flex;
 }
@@ -624,6 +621,9 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
   font-size: 1.5rem;
 
 }
+
+/*styling wear.js when 1 item is clicked */
+
 
 
 
@@ -876,6 +876,183 @@ form input{
   margin-top: 2rem;
   font-weight: bolder;
 }
+
+/*styling the contact page*/
+
+.contact-flex{
+  display: flex;
+}
+.contact-flex h2{
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+  width: 50%;
+}
+.contact-flex h3{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-flex span{
+  font-size: 3rem;
+  font-weight: bolder;
+  color: rgb(196, 29, 99) ;
+}
+
+.contact-flex button{
+  padding: 1rem 3rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(196, 29, 99);
+  color: white;
+  cursor: pointer;
+  font-family: 'Oswald';
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-top: 2rem;
+
+}
+
+
+.contact-flex p{
+  width: 80%;
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  word-spacing: 0.5rem;
+
+}
+
+.card-background{
+  width: 35rem;
+  height: 38rem ;
+  background-color: rgb(196, 29, 99);
+
+}
+
+.contact-flex img{
+  width: 26rem;
+  height: 30rem ;
+  padding-top: 4rem;
+  padding-left: 4.5rem;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.contact-showcase{
+  background-image: url(/src/images/pic6.jpg);
+  height: 100vh;
+  width: 100%;
+  margin-top: 5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+}
+
+/* .form-showcase{
+  background-color:red;
+  height: 400px;
+} */
+
+.form-flex{
+  display: flex;
+  padding-top: 5rem;
+}
+
+.contact-form{
+  width: 32rem;
+  height: 26rem;
+  background-color: white;
+  border-bottom-right-radius: 50px;
+}
+
+.contact-form form input{
+  display: block;
+  padding-top: 1rem;
+  width: 60%;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid black;
+  margin-left: 3rem;
+  font-weight: bolder;
+  font-family: 'Oswald';
+  font-size: 1.1rem;
+  
+
+}
+
+.contact-form button{
+  padding: 0.7rem 2.5rem;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: 'Oswald';
+  font-size: 1.3rem;
+  font-weight: bolder;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+.side-social{
+  width: 32rem;
+  height: 26rem;
+  background-color: white;
+  border-bottom-left-radius: 50px;
+
+}
+
+.side-social i{
+  font-size: 3rem;
+
+}
+
+.side-social span{
+  font-size: 5rem;
+  color: rgb(196, 29, 99);
+}
+
+.side-social a{
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+
+}
+
+.social-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.contact-banner{
+ display: flex;
+
+}
+
+.banner-side{
+  background-color: rgba(22, 82, 100, 0.9);
+  color: white;
+  height: 170px;
+  width: 30%;
+
+}
+.banner-right{
+  background-color: rgb(29, 228, 128);
+  color: white;
+  height: 170px;
+  width: 70%;
+}
+
+
+
+
+
+/*end of contact */
 
 /*styling the footer only */
 footer{

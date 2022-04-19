@@ -4,7 +4,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/header';
 import Showcase from './components/showcase';
 import Wears from './components/wears';
+import Wear from './components/wear';
 import Meal from './components/meal';
+import Contact from './components/contact';
 import Gym from './components/gym';
 
 function App() {
@@ -14,11 +16,12 @@ function App() {
 
       <Routes>
      <Route path="/" element= { <Showcase /> }/>
-     {/* <Route path="/Card" element= { <Card /> }/> */}
-     {/* <Route path="/Landing" element= { <Landing /> }/> */}
-     <Route path="/WEAR" element= { <Wears /> }/>
-     { <Route path="/Meal" element= { <Meal /> }/> }
+     <Route path="/wears" element= { <Wears /> }/>
+     <Route path="/wears/:wearId" element= { <Wear /> }/>
+     <Route path="/Meal" element= { <Meal /> }/> 
+     <Route path="/Contact" element= { <Contact /> }/>
      <Route path="/GYM" element= { <Gym /> }/>
+
       </Routes>   
     </Router>
   );

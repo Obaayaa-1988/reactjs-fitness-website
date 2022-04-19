@@ -2,12 +2,6 @@
 import React, { useState } from 'react';
 import Images from '../images/image13.jpg';
 import { NavLink, Outlet } from 'react-router-dom';
-// import Image1 from '../images/image8.jpg';
-// import Image2 from '../images/image11.jpg';
-// import Image3 from '../images/image12.jpg';
-// import Image4 from '../images/image15.jpg';
-// import Image5 from '../images/image17.jpg';
-// import Image6 from '../images/image16.jpg';
 import Pic5 from '../images/pic5.jpg';
 import { getWears } from '../wearData';
 import Footer from './footer';
@@ -58,7 +52,7 @@ export default function Wears() {
           <div className='outfit-grid'>
 
             {wears.map((wear) => (
-              <NavLink to={`/Wears/${wear.name}`} key={wear.name}>
+              <NavLink to={`/Wears/${wear.number}`} key={wear.number}>
 
                 <div className='outfit-image1'>
                   <img src={wear.image} />
