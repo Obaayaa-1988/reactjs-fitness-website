@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 
-export default function header() {
+export default function Header() {
   return (
     <div>
         <header>
@@ -20,9 +20,10 @@ export default function header() {
                 </nav>
 
                 <div className='header-social'>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>   
+                <a href="#"><i class="fa fa-bell"></i></a>
+                <a href="#"><i class="fa fa-podcast"></i></a>
+                </div> 
+                  
             </header>
 
 

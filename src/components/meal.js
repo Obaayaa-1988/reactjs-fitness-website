@@ -33,12 +33,12 @@ export default function meal() {
           </div>
 
           <div>
-            <img src={Images} />
-            <h3>Toated Exekiel Bread and Avocado</h3>
+            <img src={Images} alt="picture"/>
+            <h3> Oat, Banana and Granola </h3>
           </div>
           <div>
-            <img src={Image} />
-            <h3>Toated Exekiel Bread and Avocado</h3>
+            <img src={Image} alt="picture" />
+            <h3>Fried Egg and Salad</h3>
           </div>
         </div>
 
@@ -47,8 +47,8 @@ export default function meal() {
       <div className='container'>
         <div className='lunch-ideas' >
           <div>
-            <img src={Image1} />
-            <h3>Toated Exekiel Bread and Avocado</h3>
+            <img src={Image1} alt="picture" />
+            <h3>Tuna Salad and Potatoes</h3>
           </div>
 
           <div className="break-card2">
@@ -58,8 +58,8 @@ export default function meal() {
             <button>View More</button>
           </div>
           <div>
-            <img src={Image2} />
-            <h3>Toated Exekiel Bread and Avocado</h3>
+            <img src={Image2} alt="picture"/>
+            <h3>Raw Salad</h3>
           </div>
 
 
@@ -70,12 +70,12 @@ export default function meal() {
       <div className='container'>
         <div className='break-ideas' >
           <div>
-            <img src={Image3} />
-            <h3>Toated Exekiel Bread and Avocado</h3>
+            <img src={Image3} alt="picture" />
+            <h3>Steak and Asparagus</h3>
           </div>
           <div>
-            <img src={Image4} />
-            <h3>Toated Exekiel Bread and Avocado</h3>
+            <img src={Image4}  alt="picture"/>
+            <h3>Beef with Roasted Mushroom and Peas</h3>
           </div>
 
           <div className="break-card">

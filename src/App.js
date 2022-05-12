@@ -9,6 +9,9 @@ import Meal from './components/meal';
 import Contact from './components/contact';
 import Gym from './components/gym';
 
+
+
+
 function App() {
   return (
     <Router>

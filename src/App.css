@@ -7,6 +7,7 @@
 }
 
 body{
+  
   font-family: 'Oswald';
 }
 
@@ -263,7 +264,7 @@ nav a{
   text-align: center;
   color: white;
   margin-bottom: 2rem;
-  padding-top: 3rem;
+  padding-top: 6.2rem;
 }
 
 .landing-cards{
@@ -283,7 +284,7 @@ nav a{
 }
 
 .land-card{
-  background-color: rgb(44, 53, 63);;
+  background-color: rgb(51, 100, 155);;
   border-radius: 10px;
   width: 15rem;
   height: 15rem;
@@ -291,6 +292,7 @@ nav a{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-left: 1rem;
 
 
 }
@@ -402,6 +404,7 @@ nav a{
 /*styling the form */
 .body-workout{
   display: flex;
+  margin-bottom: -1rem;
 }
 
 .outer-form2{
@@ -544,6 +547,10 @@ nav a{
   cursor: pointer;
 }
 
+.outfit-grid{
+  margin-left: 2rem;
+}
+
 .outfit-grid img{
   width: 20rem;
   height: 30rem ;
@@ -566,6 +573,7 @@ nav a{
 .outfit-text h1{
   margin-top: 5rem;
   margin-bottom: 2rem;
+  margin-left: 2rem;
   background-color: black;
   color: white;
   width: 15rem;
@@ -574,18 +582,19 @@ nav a{
 
 }
 
+
+
  .wear-display{
   display: flex;
   margin-top: 5rem;
+  margin-bottom: -1rem;
 } 
 .wear-linear{
   height: 30rem;
   width: 50%;
-  background: #8E2DE2;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  
+  background: #8E2DE2; 
+background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+background: linear-gradient(to right, #4A00E0, #8E2DE2); 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -594,7 +603,7 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
 
 
 .display-image img{
-  width: 210%;
+  width: 100%;
   height: 30rem ;
   object-fit: cover;
   object-position: 50% 50%;
@@ -735,7 +744,12 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
 .break-ideas{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-left: -2rem;
 
+}
+
+.break-ideas h3{
+  margin-left: 1rem;
 }
 
 
@@ -753,6 +767,7 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 4rem;
   margin-bottom: 6rem;
+  margin-left: -2rem;
 
 }
 

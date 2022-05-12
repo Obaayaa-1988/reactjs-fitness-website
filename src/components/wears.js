@@ -66,6 +66,7 @@ export default function Wears() {
             ))}
            
           </div>
+          
           <Outlet />
 
           {/* end of outfit-grid */}
